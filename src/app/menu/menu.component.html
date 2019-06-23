@@ -3,28 +3,28 @@
     Indian Society of Technical Education
   </mat-card-title> -->
   <mat-card-content class="flex-container">
-    <button mat-raised-button color="primary" style="min-width: 100px" routerLink="/home">
+    <button mat-raised-button color="primary"  routerLink="/home">
       <mat-icon>home </mat-icon>
       Homepage
     </button>
-    <button mat-raised-button color="warn" style="min-width: 100px" [matMenuTriggerFor]="Yearbook2019">
+    <button mat-raised-button color="warn"  [matMenuTriggerFor]="Yearbook2019">
       <mat-icon>book</mat-icon>
       Yearbook
     </button>
-    <button mat-raised-button color="accent" [matMenuTriggerFor]="team" style="min-width: 100px">
+    <button mat-raised-button color="accent" [matMenuTriggerFor]="team" >
       <mat-icon>group</mat-icon>
       Team
     </button>
-    <button mat-raised-button color="warn" [matMenuTriggerFor]="team" style="min-width: 100px">
+    <button mat-raised-button color="warn" [matMenuTriggerFor]="team" >
       <mat-icon>event</mat-icon>
       Events
     </button>
-    <button mat-raised-button color="primary" style="min-width: 100px">
+    <button mat-raised-button color="primary" >
       <mat-icon>image</mat-icon>
       Gallery
     </button>
 
-    <button mat-raised-button color="accent" (click)="openBottomSheet()" style="min-width: 100px">
+    <button mat-raised-button color="accent" (click)="openBottomSheet()" >
       <mat-icon> contacts</mat-icon>
       Contact Us
     </button>
