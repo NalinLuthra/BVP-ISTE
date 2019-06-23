@@ -1,0 +1,10 @@
+.flex-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-container button {
+    flex-grow: 1
+}
