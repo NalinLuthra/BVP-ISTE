@@ -1,0 +1,99 @@
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile><mat-card class="example-card" style="max-width: 450px; top:30px">
+      <mat-card-header>
+        <mat-card-title><b>Registration</b></mat-card-title>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+        <mat-card-content >
+            <mat-horizontal-stepper [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="firstFormGroup">
+            <form class="example-form">
+                <ng-template matStepLabel>Enter Basic Details</ng-template>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Full Name" [(ngModel)]="username" name="username" required>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="E-Mail Address" [(ngModel)]="email" name="email" required>
+                  </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Position" [(ngModel)]="position" name="position" required>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Quote" [(ngModel)]="quote" name="quote" required>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <input matInput [matDatepicker]="picker" placeholder="Date of Birth">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Phone Number" [(ngModel)]="phone" name="phoneNumebr">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Roll Number" [(ngModel)]="roll" name="rollNumber" required>
+                </mat-form-field>
+                <mat-divider></mat-divider>
+                <mat-card-actions style="position: relative; margin: auto;">
+                  <button  style="width: 400px; " mat-raised-button mat-button matStepperNext color="primary">Next</button>
+                </mat-card-actions>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup" >
+              <form >
+                <ng-template matStepLabel>Social Media Details</ng-template>
+                <mat-form-field class="example-full-width" >
+                  <input matInput placeholder="Facebook" [(ngModel)]="facebookId" name="facebook">
+                </mat-form-field >
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Instagram" [(ngModel)]="instagramId" name="instagram">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Linkedin" [(ngModel)]="linkedinId" name="linkedin">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Twitter" [(ngModel)]="twitterLink" name="twitter">
+                </mat-form-field>
+                <mat-divider></mat-divider>
+                <!-- <mat-card-actions style="margin: auto;">
+                  <button  style="width: 200px;" mat-raised-button (click)="login()" color="warn">Back</button>
+                  <button  style="width: 200px;" mat-raised-button (click)="login()" color="primary">Register</button>
+                </mat-card-actions> -->
+                <mat-card-actions>
+                  <button style="width: 200px;" mat-button mat-raised-button matStepperPrevious color="accent">Back</button>
+                  <button style="width: 200px;" mat-button mat-raised-button matStepperNext color="primary" (click)="register()">Register</button>
+                </mat-card-actions>
+              </form>
+            </mat-step>
+          </mat-horizontal-stepper>
+        </mat-card-content>
+    </mat-card></mat-grid-tile>
+  <mat-grid-tile>
+  <mat-card class="example-card" style="max-width: 450px;">
+    <mat-card-header>
+      <mat-card-title><b>Profile Sample</b></mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content >
+                <div class="our-team">
+                  <div class="picture">
+                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                  </div>
+                  <div class="team-content">
+                    <h2 class="name">{{username}}</h2>
+                    <h3 class="title">{{position}}</h3>
+                    <h4 class="quote">"{{quote}}"</h4>
+                  </div>
+                  <ul class="social">
+                    <li><a [href]="facebookId" class="fa fa-facebook" aria-hidden="true"></a></li>
+                    <li><a [href]="twitterLink" class="fa fa-twitter" aria-hidden="true"></a></li>
+                    <li><a [href]="linkedinId" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                    <li><a [href]="instagramId" class="fa fa-instagram" aria-hidden="true"></a></li>
+                  </ul>
+                </div>
+    </mat-card-content>
+  </mat-card>
+</mat-grid-tile>
+</mat-grid-list>
+
+
+
