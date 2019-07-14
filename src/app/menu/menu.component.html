@@ -1,40 +1,51 @@
-<mat-card style="position: sticky; top: 0%; z-index: 1;">
+<mat-toolbar color="primary" style="position: fixed; top: 0%; left:0%; z-index: 1;">
   <!-- <mat-card-title>
     Indian Society of Technical Education
   </mat-card-title> -->
-  <mat-card-content class="flex-container">
-    <button mat-raised-button color="primary"  routerLink="/home">
-      <mat-icon>home </mat-icon>
+  <mat-toolbar-row>
+
+    <button mat-menu-item routerLink="/home">
+      <!-- <mat-icon>home </mat-icon> -->
+      <span routerLink="/home"><img src="assets/img/logo.png" style="width: 20px; position:inherit;" alt="BVP ISTE"></span>
       Homepage
     </button>
-    <button mat-raised-button color="warn"  [matMenuTriggerFor]="Yearbook2019">
+    <button mat-menu-item   [matMenuTriggerFor]="Yearbook2019">
       <mat-icon>book</mat-icon>
       Yearbook
     </button>
-    <button mat-raised-button color="accent" [matMenuTriggerFor]="team" >
+    <button mat-menu-item  [matMenuTriggerFor]="team" >
       <mat-icon>group</mat-icon>
       Team
     </button>
-    <button mat-raised-button color="warn" [matMenuTriggerFor]="team" >
+    <button mat-menu-item  [matMenuTriggerFor]="team" >
       <mat-icon>event</mat-icon>
       Events
     </button>
-    <button mat-raised-button color="primary" >
+    <button mat-menu-item  >
       <mat-icon>image</mat-icon>
       Gallery
     </button>
 
-    <button mat-raised-button color="accent" (click)="openBottomSheet()" >
+    <button mat-menu-item  (click)="openBottomSheet()" >
       <mat-icon> contacts</mat-icon>
       Contact Us
     </button>
-    
+
+    <button mat-menu-item [routerLink]="['/teamRegistration']">
+      <mat-icon>save</mat-icon>
+      Register
+    </button>
+
+
+
+
     <mat-menu #Yearbook2019="matMenu" >
         <button mat-menu-item [matMenuTriggerFor]="classes">
             <mat-icon>group</mat-icon>
             <span>2019-2020</span>
         </button>
     </mat-menu>
+
 
     <mat-menu #classes="matMenu" >
         <button mat-menu-item [matMenuTriggerFor]="shift_cs">
@@ -117,5 +128,5 @@
         <span>Disable alerts</span>
       </button> -->
     </mat-menu>
-  </mat-card-content>
-</mat-card>
+  </mat-toolbar-row>
+</mat-toolbar>

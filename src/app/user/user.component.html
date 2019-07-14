@@ -1,17 +1,25 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div style="position: relative; top: 70px">
 <div *ngFor="let u of users" >
-<div class="col-sm-2 col-xs-6 selector">
-    <br>      
-    <div class="portlet light profile-sidebar-portlet bordered " >
-        <div class="profile-userpic">
-            <img src="http://cdn.onlinewebfonts.com/svg/img_569205.png" class="img-responsive" alt=""> </div>
-        <div class="profile-usertitle" >
-            <div class="profile-usertitle-name">{{u.name}}</div>
-            <!-- <div class="profile-usertitle-job">{{u.email}}</div> -->
+<div class="col-sm-4 col-xs-12 col-md-3 selector" >
+    <div class="our-team" style="margin: 0 auto;float: none;margin-bottom: 10px;">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
         </div>
-    </div>
+        <div class="team-content">
+          <h2 class="name">{{u.name}}</h2>
+          <h3 class="title">{{u.position}}</h3>
+          <h4 class="quote"><b>"{{u.quote}}"</b></h4>
+        </div>
+        <ul class="social">
+          <li><a [href]="u.facebookId" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a [href]="u.twitterLink" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a [href]="u.linkedinId" class="fa fa-linkedin" aria-hidden="true"></a></li>
+          <li><a [href]="u.instagramId" class="fa fa-instagram" aria-hidden="true"></a></li>
+        </ul>
+      </div>
 </div>
 </div>
-  
+</div>
