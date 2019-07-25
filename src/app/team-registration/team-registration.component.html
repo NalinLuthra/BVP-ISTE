@@ -12,6 +12,10 @@
                 <mat-form-field class="example-full-width">
                   <input matInput placeholder="Full Name" [(ngModel)]="username" name="username" required>
                 </mat-form-field>
+                <div class="example-full-width">
+                  <mat-label for="image" >Upload Image :</mat-label>
+                  <input type="file" [(ngModel)]="path" name="image" (change)="onFileUpload($event)" required>
+                </div>
                 <mat-form-field class="example-full-width">
                     <input matInput placeholder="E-Mail Address" [(ngModel)]="email" name="email" required>
                   </mat-form-field>

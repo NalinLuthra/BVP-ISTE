@@ -25,10 +25,14 @@ export class TeamRegistrationComponent implements OnInit {
   instagramId: string;
   linkedinId: string;
   twitterLink: string;
-
+  path: any;
 
 
   constructor(private formBuilder: FormBuilder, private rs: RegisterService) { }
+
+  onFileUpload(e){
+    this.path = e.target.files[0];
+  }
 
   register() {
       // tslint:disable-next-line: max-line-length
