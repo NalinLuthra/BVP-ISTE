@@ -19,7 +19,7 @@ import {BottomSheetOverviewExampleSheet} from './BottomSheet/bottom-sheet-overvi
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 
-//Bootstrap
+// Bootstrap
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // Angular Material
