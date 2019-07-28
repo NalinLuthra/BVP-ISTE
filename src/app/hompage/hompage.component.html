@@ -1,29 +1,84 @@
-<ngb-carousel *ngIf="images">
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="images[0]" alt="Random first slide">
+<div style="position: relative;top: 100px; " class="container-fluid ">
+  <div class="row justify-content-center" style="padding-bottom: 5%;">
+    <div class="col-sm-1 col-lg-6 col-md-6 ">
+      <h1>BVP ISTE</h1>
+      <p style="text-align: justify; text-justify: inter-word;">Lorem Ipsum is simply dummy text
+        of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
-    <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <div class="col-sm-1 col-lg-5 col-md-6">
+      <img src="assets/img/one.jpg" class="rounded float-right img-fluid" style="max-width: 50%; margin-right: 100px;">
     </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="images[1]" alt="Random second slide">
+  </div>
+  <mat-divider style="border-top-width: 2px;"></mat-divider>
+  <div style="padding-top: 2%" class="row justify-content-center" style="padding-bottom: 1%; padding-top: 1%">
+    <h2>Events</h2>
+  </div>
+  <div style="padding-bottom: 5%;">
+  <ng-image-slider [images]="imageObject" #nav></ng-image-slider >
+  </div>
+  <mat-divider style="border-top-width: 2px;border-top: 2%;"></mat-divider>
+
+  <div class="row justify-content-center">
+    <h2 style="padding-top: 2%">SIGs</h2>
+  </div>
+  <div class="row justify-content-center" style="padding-bottom: 2%">
+    <div class="card-deck" style="padding: 1%">
+      <div class="card" style="max-width: 200px">
+        <img class="card-img-top" src="assets/img/electronika.jpg" alt="Card image" style="max-height: 130px">
+        <div class="card-body">
+          <h5 class="card-title">Electronika</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div class="card" style="max-width: 200px">
+        <img class="card-img-top" src="assets/img/softech.jpg" alt="Card image" style="max-height: 130px">
+        <div class="card-body">
+          <h5 class="card-title">Soft Tech</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div class="card" style="max-width: 200px">
+        <img class="card-img-top" src="assets/img/slash.jpg" alt="Card image" style="max-height: 130px">
+        <div class="card-body">
+          <h5 class="card-title">Slash 0</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    <!-- </div>
+    <div class="row justify-content-center"> -->
+      <!-- <div class="card-deck"> -->
+        <div class="card" style="max-width: 200px">
+          <img class="card-img-top" src="assets/img/sahitya.jpg" alt="Card image" style="max-height: 130px">
+          <div class="card-body">
+            <h5 class="card-title">Sahtiya</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="card" style="max-width: 200px">
+          <img class="card-img-top" src="assets/img/groot.jpg" alt="Card image" style="max-height: 130px">
+          <div class="card-body">
+            <h5 class="card-title">Project Root</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      <!-- </div> -->
     </div>
-    <div class="carousel-caption">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="images[2]" alt="Random third slide">
-    </div>
-    <div class="carousel-caption">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </div>
-  </ng-template>
-</ngb-carousel>
+
+  </div>
+
+</div>
+

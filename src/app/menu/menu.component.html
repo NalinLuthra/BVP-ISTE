@@ -1,52 +1,113 @@
+<!-- <style>
+  button mat-icon{
+    color: white;
+  }
+button{
+  color: white;
+}
+
+.mobile{
+  color: black;
+}
+</style> -->
+
+
 <mat-toolbar color="primary" style="position: fixed; top: 0%; left:0%; z-index: 1;">
-  <!-- <mat-card-title>
-    Indian Society of Technical Education
-  </mat-card-title> -->
+    <span class=".d-none">
+
+  <!-- <mat-menu #menu="matMenu">
+      <button class="mobile" mat-menu-item routerLink="/home">
+        <span routerLink="/home"><img src="assets/img/logo.png" style="width: 20px; position:inherit;" alt="BVP ISTE"></span>
+        <span style="color: #e81d29 ">  Ho</span> <span style="color: #8cc340">mep</span> <span style="color: #f8d918">age</span>
+      </button>
+      <button class="mobile" mat-menu-item  >
+        <mat-icon>school</mat-icon>
+        SIGs
+      </button>
+      <button class="mobile" mat-menu-item  >
+        <mat-icon>fiber_new</mat-icon>
+        Fresher
+      </button>
+      <button class="mobile" mat-menu-item   [matMenuTriggerFor]="Yearbook2019">
+        <mat-icon>book</mat-icon>
+        Yearbook
+      </button>
+      <button class="mobile" mat-menu-item  [matMenuTriggerFor]="team" >
+        <mat-icon>group</mat-icon>
+        Team
+      </button>
+      <button class="mobile" mat-menu-item  [matMenuTriggerFor]="team" >
+        <mat-icon>event</mat-icon>
+        Events
+      </button>
+      <button  class="mobile" mat-menu-item  >
+        <mat-icon>image</mat-icon>
+        Gallery
+      </button>
+
+      <button class="mobile" mat-menu-item  (click)="openBottomSheet()" >
+        <mat-icon> contacts</mat-icon>
+        Contact Us
+      </button>
+
+      <button class="mobile" mat-menu-item [routerLink]="['/teamRegistration']">
+        <mat-icon>save</mat-icon>
+        Register
+      </button>
+    </mat-menu> -->
   <mat-toolbar-row>
+      <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
 
-    <button mat-menu-item routerLink="/home">
-      <!-- <mat-icon>home </mat-icon> -->
-      <span routerLink="/home"><img src="assets/img/logo.png" style="width: 20px; position:inherit;" alt="BVP ISTE"></span>
-      Homepage
-    </button>
-    <button mat-menu-item   [matMenuTriggerFor]="Yearbook2019">
-      <mat-icon>book</mat-icon>
-      Yearbook
-    </button>
-    <button mat-menu-item  [matMenuTriggerFor]="team" >
-      <mat-icon>group</mat-icon>
-      Team
-    </button>
-    <button mat-menu-item  [matMenuTriggerFor]="team" >
-      <mat-icon>event</mat-icon>
-      Events
-    </button>
-    <button mat-menu-item  >
-      <mat-icon>image</mat-icon>
-      Gallery
-    </button>
+          <mat-icon>more_vert</mat-icon>
+      </button> -->
 
-    <button mat-menu-item  (click)="openBottomSheet()" >
-      <mat-icon> contacts</mat-icon>
-      Contact Us
-    </button>
+      <button mat-menu-item routerLink="/home">
+        <!-- <mat-icon>home </mat-icon> -->
+        <span routerLink="/home"><img src="assets/img/logo.png" style="width: 20px; position:inherit;" alt="BVP ISTE"></span>
+        <span style="color: #e81d29 ">  Ho</span> <span style="color: #8cc340">mep</span> <span style="color: #f8d918">age</span>
+      </button>
+      <button mat-menu-item  >
+        <mat-icon>school</mat-icon>
+        SIGs
+      </button>
+      <button mat-menu-item  >
+        <mat-icon>fiber_new</mat-icon>
+        Fresher
+      </button>
+      <button mat-menu-item   [matMenuTriggerFor]="Yearbook2019" >
+        <mat-icon>book</mat-icon>
+        Yearbook
+      </button>
+      <button mat-menu-item  [matMenuTriggerFor]="team"  >
+        <mat-icon>group</mat-icon>
+        Team
+      </button>
+      <button mat-menu-item  [matMenuTriggerFor]="team"  >
+        <mat-icon>event</mat-icon>
+        Events
+      </button>
+      <button mat-menu-item  >
+        <mat-icon>image</mat-icon>
+        Gallery
+      </button>
 
-    <button mat-menu-item [routerLink]="['/teamRegistration']">
-      <mat-icon>save</mat-icon>
-      Register
-    </button>
+      <button mat-menu-item  (click)="openBottomSheet()" >
+        <mat-icon> contacts</mat-icon>
+        Contact Us
+      </button>
 
+      <button mat-menu-item [routerLink]="['/teamRegistration']" >
+        <mat-icon>save</mat-icon>
+        Register
+      </button>
 
-
-
+   <!-- Button is over here  -->
     <mat-menu #Yearbook2019="matMenu" >
         <button mat-menu-item [matMenuTriggerFor]="classes">
             <mat-icon>group</mat-icon>
             <span>2019-2020</span>
         </button>
     </mat-menu>
-
-
     <mat-menu #classes="matMenu" >
         <button mat-menu-item [matMenuTriggerFor]="shift_cs">
             <mat-icon>computer icon</mat-icon>
@@ -129,4 +190,6 @@
       </button> -->
     </mat-menu>
   </mat-toolbar-row>
+</span>
+
 </mat-toolbar>

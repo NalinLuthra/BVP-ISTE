@@ -46,7 +46,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 // Virtual Scroll
 import { ScrollingModule } from '@angular/cdk/scrolling';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -63,6 +63,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 
   imports: [
     BrowserModule,
+    NgImageSliderModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
