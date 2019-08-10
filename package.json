@@ -34,6 +34,7 @@
     "bootstrap": "4.0.0",
     "core-js": "^2.5.4",
     "express": "^4.17.1",
+    "flex-layout": "^1.0.1",
     "font-awesome": "^4.7.0",
     "fs": "^0.0.1-security",
     "hammerjs": "^2.0.8",

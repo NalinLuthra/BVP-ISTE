@@ -38,6 +38,10 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MatCheckboxModule, MatSidenavModule, MatExpansionModule } from '@angular/material';
+import {MatTreeModule} from '@angular/material/tree';
+
+
 
 
 // Awesome Fonts
@@ -47,6 +51,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 // Virtual Scroll
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { SIGComponent } from './sig/sig.component';
+import { FreshersComponent } from './freshers/freshers.component';
 
 @NgModule({
   declarations: [
@@ -58,11 +64,16 @@ import { NgImageSliderModule } from 'ng-image-slider';
     HompageComponent,
     BottomSheetOverviewExampleSheet,
     TeamRegistrationComponent,
+    SIGComponent,
+    FreshersComponent,
 
   ],
 
   imports: [
     BrowserModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatExpansionModule,
     NgImageSliderModule,
     AppRoutingModule,
     NgbModule,
@@ -88,9 +99,17 @@ import { NgImageSliderModule } from 'ng-image-slider';
     MatStepperModule,
     HttpClientModule,
     MatGridListModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    MatTreeModule
   ],
-  exports : [
+  exports : [MatButtonModule,
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatExpansionModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent],
