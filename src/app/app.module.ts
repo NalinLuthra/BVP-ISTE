@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
+
 // List of Components
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
@@ -53,6 +55,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { SIGComponent } from './sig/sig.component';
 import { FreshersComponent } from './freshers/freshers.component';
+import { ResultComponent } from './result/result.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +69,7 @@ import { FreshersComponent } from './freshers/freshers.component';
     TeamRegistrationComponent,
     SIGComponent,
     FreshersComponent,
+    ResultComponent,
 
   ],
 
