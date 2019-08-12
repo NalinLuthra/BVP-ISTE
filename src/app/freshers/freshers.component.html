@@ -1,0 +1,42 @@
+<div class="container-fluid " style="padding-top: 100px;">
+  <h3 style="text-align: center; color: #3a3a3a;" >Freshers Column</h3>
+  <mat-divider style="border-top-width: 2px; width: 90%; margin: auto"></mat-divider>
+  <h4 style="color: #3a3a3a; padding-left: 5%; padding-top: 1%;">FAQs</h4>
+  <div class="row justify-content-center" style="padding-bottom: 5%;">
+      <div class="col-sm-1 col-lg-5 col-md-6" style="margin-right: 0%" >
+        <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" >
+          <!-- This is the tree node template for leaf nodes -->
+          <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding >
+            <!-- use a disabled button to provide padding for tree leaf -->
+            <button mat-icon-button></button>
+            <a (click)=goto(node_item) #node_item>{{node.name}}</a>
+          </mat-tree-node>
+          <!-- This is the tree node template for expandable nodes -->
+          <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+            <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
+              <mat-icon class="mat-icon-rtl-mirror">
+                {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+              </mat-icon>
+            </button>
+            {{node.name}}
+          </mat-tree-node>
+        </mat-tree>
+      </div>
+      <div class="col-sm-1 col-lg-5 col-md-6" style="margin-right: 0%" id="info_1">
+        <mat-card class="example-card" >
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Sheldon</mat-card-title>
+            <mat-card-subtitle>I am expert in providing information</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                {{disc_temp}}
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+</div>
+</div>

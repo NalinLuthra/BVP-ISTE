@@ -1,0 +1,950 @@
+<!DOCTYPE html>↵<html>↵
+
+<head>↵
+  <!-- Global site tag (gtag.js) - Google Analytics -->↵<script async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-126684523-1"></script>↵<script>
+    ↵
+    window.dataLayer = window.dataLayer || [];↵
+    function gtag() {
+      dataLayer.push(arguments);
+    }↵
+    gtag('js', new Date());↵↵
+    gtag('config', 'UA-126684523-1');↵
+
+  </script>↵↵<title>GGSIPU RESULTS</title>↵
+  <meta charset="UTF-8">↵
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />↵<style>
+    ↵th,
+    td {
+      ↵ padding: 8px !important;
+      ↵
+    }
+
+    ↵td↵ {
+      ↵ font-size: 1.1em;
+      ↵
+    }
+
+    ↵.fail td↵ {
+      background: #ff8c95 ! important;
+      ↵ font-weight: bold;
+      ↵↵
+    }
+
+    ↵.reappear td↵ {
+      background: #7fdeef ! important;
+      ↵ font-weight: bold;
+      ↵↵
+    }
+
+    ↵.panel,
+    .content {
+      ↵ background-color: unset ! important;
+      ↵
+    }
+
+    ↵.celldiv {
+      ↵ padding: 20px;
+      ↵ font-size: 1.2em;
+      ↵
+    }
+
+    ↵#notfound {
+      ↵ background-color: ↵
+    }
+
+    ↵#notfound li {
+      ↵ margin: 10px 0;
+      ↵
+    }
+
+    ↵
+
+  </style>↵
+  <link href="assets/css/resultstyle.css" rel="stylesheet">↵
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">↵
+  <link href="assets/css/detect.css" rel="stylesheet">↵
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/metro/3.0.17/css/metro.min.css" rel="stylesheet">↵
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/metro/3.0.17/css/metro-responsive.min.css" rel="stylesheet">↵
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>↵<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/metro/3.0.17/js/metro.min.js"></script>↵
+  <link rel="icon" type="image/png" href="logoblack.png" />↵ <script>
+    ↵↵
+    function getcolgrank(sem, branch, colg, batch)↵ {
+      ↵
+      if (batch <= 2012)↵ {
+        ↵
+        $.Notify({
+          ↵
+          caption: 'SORRY',
+          ↵content: 'RANKS ARE AVAILABLE FOR BATCH 2013 ONWARDS',
+          ↵type: 'info',
+          ↵timeOut: '3000',
+          ↵shadow: 'true'
+        });↵
+        return;↵
+      }↵↵
+      document.getElementById("sem").value = sem;↵
+      document.getElementById("branch").value = branch;↵
+      document.getElementById("batch").value = batch;↵
+      document.getElementById("college").value = colg;↵
+      document.colgrankform.submit();
+    }↵↵
+    function getunivrank(sem, branch, batch, c)↵ {
+      ↵
+      if (batch <= 2012)↵ {
+        ↵
+        $.Notify({
+          ↵
+          caption: 'SORRY',
+          ↵content: 'RANKS ARE AVAILABLE FOR BATCH 2013 ONWARDS',
+          ↵type: 'info',
+          ↵timeOut: '3000',
+          ↵shadow: 'true'
+        });↵
+        return;↵
+      }↵
+      document.getElementById("sem2").value = sem;↵
+      document.getElementById("branch2").value = branch;↵
+      document.getElementById("batch2").value = batch;↵
+      document.getElementById("univrank").value = c;↵
+      document.univrankform.submit();↵
+    }↵
+
+  </script>↵ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>↵<script>
+    ↵
+    (adsbygoogle = window.adsbygoogle || []).push({
+      ↵
+      google_ad_client: "ca-pub-3843514829836885",
+      ↵enable_page_level_ads: true↵
+    });↵
+
+  </script>↵↵</head>↵
+
+<body>↵ <div id="container">↵ <div id="content">↵↵ <div style="margin-bottom:15px" id="appbardiv">↵ <header
+          class="app-bar block-shadow-info fixed-top" data-role="appbar">↵ <div class="container ">↵ <a href="./"
+              class="logotext app-bar-element">↵ <div class="logo" style="display:inline;border-radius:50%;">↵ <img
+                  src="logoblack.png" style="border-radius:50%;height: 40px;display: inline-block; margin-right:4px;">
+              </div>↵ IPURESULTS↵ </a>↵ <span class="app-bar-divider"></span>↵ <ul class="app-bar-menu">↵ <li><a
+                  href="./">Home</a></li>↵ <span class="app-bar-divider"></span>↵ <li><a href="getcolgrank.html">College
+                  Ranks</a></li>↵ <span class="app-bar-divider"></span>↵ <li><a href="getunivrank.html">University
+                  Ranks</a></li>↵ <span class="app-bar-divider"></span>↵ <li><a href="disclaimer.html">Disclaimer</a>
+              </li>↵ <span class="app-bar-divider"></span>↵ <li><a href="contact.html">Contact</a></li>↵ <span
+                class="app-bar-divider"></span>↵ </ul>↵ </div>↵ </header>↵ ↵ </div>↵ <div style="margin-top:70px">↵
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>↵
+        <!-- ipuresultstopad -->↵<ins class="adsbygoogle" ↵ style="display:block" ↵
+          data-ad-client="ca-pub-3843514829836885" ↵ data-ad-slot="1405498249" ↵ data-ad-format="auto"></ins>↵<script>
+          ↵
+          (adsbygoogle = window.adsbygoogle || []).push({});↵
+
+        </script>
+      </div>↵↵ <div id="pageloader" data-role="preloader" data-type="square"
+        style="position:absolute;left:50%;right:50%;top:50%;botom:50%;" data-style="color"></div>↵ <div
+        id="TcaNMQldkibe">↵ <h2>Oops! Adblocker Detected.</h2>↵ <br />↵ ð³I know you hate Ads but money ð° is needed
+        to run the website.<br />↵ Please disable adblock plugin or whitelist this website in your adblocking plugin and
+        reload page.<br />↵ The More you support,the better it will get.ð↵ </div>↵ ↵↵ <div id="wrapper"
+        style="visibility:hidden">↵ <div class="container align-center">↵↵↵ ↵ <div class="flex-grid block-shadow-danger"
+            style="margin-bottom:40px;margin-top:20px;">↵ <div class="row cells2 border no-margin">↵ <div
+                class="cell colspan6 align-center no-margin" style="background-color:#00695C; color: white;">↵ <div
+                  class="celldiv"><b>ENROLMENT NO. - 01651203116 </b></div>↵ </div>↵↵ <div
+                class="cell colspan6 align-center no-margin" style="background-color:#FB8C00; color: white;">↵ <div
+                  class="celldiv"><b>NAME - NALIN LUTHRA </b></div>↵ </div>
+            </div>
+            <div class="row cells1 border no-margin">
+              <div class="cell colspan12 align-center no-margin" style="background-color:#EF5350; color: white;">↵ <div
+                  class="celldiv"><b>COLLEGE - BHARATI VIDYAPEETH COLLEGE OF ENGINEERING </b></div>↵ </div>
+            </div>
+            <div class="row cells2 border no-margin">
+              <div class="cell colspan3 align-center no-margin" style="background-color:#00A897; color: white;">↵ <div
+                  class="celldiv"><b>BATCH - 2016 </b></div>↵ </div>
+              <div class="cell colspan9 align-center no-margin" style="background-color:#9C27B0; color: white;">↵ <div
+                  class="celldiv"><b>STREAM - INFORMATION TECHNOLOGY </b></div>↵ </div>
+            </div>
+            <div class="row cells2 border no-margin">
+              <div class="cell colspan6 align-center no-margin" style="background-color:#01848F; color:white;">↵ <div
+                  id="aggregate" class="celldiv"></div>↵ </div>
+              <div class="cell colspan6 align-center no-margin" style="background-color:#8D8044; color: white;">↵ <div
+                  id="pendingback" class="celldiv"></div>↵ </div>
+            </div>
+            <div class="row cells1 border no-margin">
+              <div class="cell colspan12 align-center no-margin" style="background-color:#424242; color: white;">↵ <div
+                  class="celldiv"><b>(Note - Aggregate only consists of semesters and subjects shown below)</b></div>↵
+              </div>
+            </div>
+          </div>
+          <div style="width:100%">↵ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>↵<ins class="adsbygoogle" ↵ style="display:block" ↵ data-ad-format="fluid" ↵
+              data-ad-layout-key="-fg+5n+6t-e7+r" ↵ data-ad-client="ca-pub-3843514829836885" ↵
+              data-ad-slot="5193204592"></ins>↵<script>
+              ↵↵
+              (adsbygoogle = window.adsbygoogle || []).push({});↵
+
+            </script>
+          </div>
+          <div class="panel " class="panel">
+            <div class="heading">↵ <span class="title">SEMESTER - 6</span>↵ </div>
+            <div class="content">
+              <div class="block-shadow" style="overflow:auto;font-size:13px;">
+                <table class="table striped hovered cell-hovered border bordered no-margin block-shadow">↵ <tr>↵ <th>
+                      <b>Sr. No.</b></td>↵
+                    <th><b>SUBJECT</b></td>↵
+                    <th><b>INTERNAL</b></td>↵
+                    <th><b>EXTERNAL</b></td>↵
+                    <th><b>TOTAL</b></td>↵
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>ARTIFICIAL INTELLIGENCE</td>
+                    <td>22</td>↵ <td>54</td>
+                    <td>76</td>↵
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>COMPILER DESIGN</td>
+                    <td>24</td>↵ <td>48</td>
+                    <td>72</td>↵
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>DATA COMMUNICATION AND NETWORKS</td>
+                    <td>19</td>↵ <td>41</td>
+                    <td>60</td>↵
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>DATA COMMUNICATION AND NETWORKS LAB</td>
+                    <td>33</td>↵ <td>55</td>
+                    <td>88</td>↵
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>MICROPROCESSOR AND MICROCONTROLLER</td>
+                    <td>23</td>↵ <td>38</td>
+                    <td>61</td>↵
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>MICROPROCESSOR AND MICROCONTROLLER LAB</td>
+                    <td>37</td>↵ <td>56</td>
+                    <td>93</td>↵
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>OPERATING SYSTEMS</td>
+                    <td>17</td>↵ <td>54</td>
+                    <td>71</td>↵
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td>OPERATING SYSTEMS (LINUX PROGRAMMING AND ADMINISTRA</td>
+                    <td>35</td>↵ <td>55</td>
+                    <td>90</td>↵
+                  </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td>WEB TECHNOLOGY</td>
+                    <td>19</td>↵ <td>58</td>
+                    <td>77</td>↵
+                  </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td>WEB TECHNOLOGY LAB</td>
+                    <td>38</td>↵ <td>53</td>
+                    <td>91</td>↵
+                  </tr>
+                </table>
+              </div>
+              <div class="flex-grid " style="margin-bottom:40px;">↵ <div class="row cells3 border no-margin">↵ <div
+                    class="cell colspan4 align-center no-margin" style="background-color:#EF5350;color: white;">↵ <div
+                      class="celldiv"><b>TOTAL - 779/1000</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#F98A00;color:white;">↵ <div
+                      class="celldiv"><b>PERCENTAGE - 77.9%</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#9C27B0;color: white;">↵
+                    <div class="celldiv"><b>Backlog(s) - 0</b></div>
+                  </div>
+                </div>
+                <div class="row cells2 border no-margin">
+                  <div class=" rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#E91E63;color: white;">↵ <div
+                      onclick='getcolgrank(6,"IT","BHARATI VIDYAPEETH COLLEGE OF ENGINEERING","2016")' class="celldiv">
+                      <b>COLLEGE RANK - 30/127</b><br /><span>(click here for all college ranks)</span></div>
+                  </div>
+                  <div class="rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#64DD17;color: white;">↵ <div onclick='getunivrank(6,"IT","2016","923")'
+                      class="celldiv"><b>UNIVERSITY RANK - 99/923</b><br /><span>(click here for all university
+                        ranks)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+          <div style="width:100%">↵ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>↵<ins class="adsbygoogle" ↵ style="display:block" ↵ data-ad-format="fluid" ↵
+              data-ad-layout-key="-fg+5n+6t-e7+r" ↵ data-ad-client="ca-pub-3843514829836885" ↵
+              data-ad-slot="5193204592"></ins>↵<script>
+              ↵↵
+              (adsbygoogle = window.adsbygoogle || []).push({});↵
+
+            </script>
+          </div>
+          <div class="panel collapsed" class="panel">
+            <div class="heading">↵ <span class="title">SEMESTER - 5</span>↵ </div>
+            <div class="content">
+              <div class="block-shadow" style="overflow:auto;font-size:13px;">
+                <table class="table striped hovered cell-hovered border bordered no-margin block-shadow">↵ <tr>↵ <th>
+                      <b>Sr. No.</b></td>↵
+                    <th><b>SUBJECT</b></td>↵
+                    <th><b>INTERNAL</b></td>↵
+                    <th><b>EXTERNAL</b></td>↵
+                    <th><b>TOTAL</b></td>↵
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>ALGORITHMS DESIGN AND ANALYSIS</td>
+                    <td>22</td>↵ <td>43</td>
+                    <td>65</td>↵
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>ALGORITHMS DESIGN AND ANALYSIS LAB</td>
+                    <td>35</td>↵ <td>55</td>
+                    <td>90</td>↵
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>COMMUNICATION SKILLS FOR PROFESSIONALS</td>
+                    <td>16</td>↵ <td>34</td>
+                    <td>50</td>↵
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>COMMUNICATION SKILLS FOR PROFESSIONALS LAB</td>
+                    <td>37</td>↵ <td>49</td>
+                    <td>86</td>↵
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>COMMUNICATION SYSTEMS</td>
+                    <td>23</td>↵ <td>59</td>
+                    <td>82</td>↵
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>COMMUNICATION SYSTEMS LAB</td>
+                    <td>36</td>↵ <td>54</td>
+                    <td>90</td>↵
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>INDUSTRIAL MANAGEMENT</td>
+                    <td>23</td>↵ <td>60</td>
+                    <td>83</td>↵
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td>JAVA PROGRAMMING</td>
+                    <td>22</td>↵ <td>60</td>
+                    <td>82</td>↵
+                  </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td>JAVA PROGRAMMING LAB</td>
+                    <td>37</td>↵ <td>56</td>
+                    <td>93</td>↵
+                  </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td>SOFTWARE ENGINEERING</td>
+                    <td>20</td>↵ <td>38</td>
+                    <td>58</td>↵
+                  </tr>
+                  <tr>
+                    <td>11.</td>
+                    <td>SOFTWARE ENGINEERING LAB</td>
+                    <td>30</td>↵ <td>56</td>
+                    <td>86</td>↵
+                  </tr>
+                  <tr>
+                    <td>12.</td>
+                    <td>VIVA INDUSTRIAL TRAINING / IN - HOUSE WORKSHOP</td>
+                    <td>38</td>↵ <td>56</td>
+                    <td>94</td>↵
+                  </tr>
+                </table>
+              </div>
+              <div class="flex-grid " style="margin-bottom:40px;">↵ <div class="row cells3 border no-margin">↵ <div
+                    class="cell colspan4 align-center no-margin" style="background-color:#EF5350;color: white;">↵ <div
+                      class="celldiv"><b>TOTAL - 959/1200</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#F98A00;color:white;">↵ <div
+                      class="celldiv"><b>PERCENTAGE - 79.92%</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#9C27B0;color: white;">↵
+                    <div class="celldiv"><b>Backlog(s) - 0</b></div>
+                  </div>
+                </div>
+                <div class="row cells2 border no-margin">
+                  <div class=" rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#E91E63;color: white;">↵ <div
+                      onclick='getcolgrank(5,"IT","BHARATI VIDYAPEETH COLLEGE OF ENGINEERING","2016")' class="celldiv">
+                      <b>COLLEGE RANK - 23/127</b><br /><span>(click here for all college ranks)</span></div>
+                  </div>
+                  <div class="rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#64DD17;color: white;">↵ <div onclick='getunivrank(5,"IT","2016","924")'
+                      class="celldiv"><b>UNIVERSITY RANK - 105/924</b><br /><span>(click here for all university
+                        ranks)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+          <div style="width:100%">↵ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>↵<ins class="adsbygoogle" ↵ style="display:block" ↵ data-ad-format="fluid" ↵
+              data-ad-layout-key="-fg+5n+6t-e7+r" ↵ data-ad-client="ca-pub-3843514829836885" ↵
+              data-ad-slot="5193204592"></ins>↵<script>
+              ↵↵
+              (adsbygoogle = window.adsbygoogle || []).push({});↵
+
+            </script>
+          </div>
+          <div class="panel collapsed" class="panel">
+            <div class="heading">↵ <span class="title">SEMESTER - 4</span>↵ </div>
+            <div class="content">
+              <div class="block-shadow" style="overflow:auto;font-size:13px;">
+                <table class="table striped hovered cell-hovered border bordered no-margin block-shadow">↵ <tr>↵ <th>
+                      <b>Sr. No.</b></td>↵
+                    <th><b>SUBJECT</b></td>↵
+                    <th><b>INTERNAL</b></td>↵
+                    <th><b>EXTERNAL</b></td>↵
+                    <th><b>TOTAL</b></td>↵
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>APPLIED MATHEMATICS - IV</td>
+                    <td>13</td>↵ <td>59</td>
+                    <td>72</td>↵
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>APPLIED MATHEMATICS LAB</td>
+                    <td>37</td>↵ <td>50</td>
+                    <td>87</td>↵
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>COMPUTER ORGANIZATION AND ARCHITECTURE</td>
+                    <td>21</td>↵ <td>52</td>
+                    <td>73</td>↵
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>COMPUTER ORGANIZATION AND ARCHITECTURE LAB</td>
+                    <td>38</td>↵ <td>54</td>
+                    <td>92</td>↵
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>CONTROL SYSTEMS</td>
+                    <td>22</td>↵ <td>38</td>
+                    <td>60</td>↵
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>CONTROL SYSTEMS LAB</td>
+                    <td>37</td>↵ <td>54</td>
+                    <td>91</td>↵
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>DATABASE MANAGEMENT SYSTEMS</td>
+                    <td>18</td>↵ <td>44</td>
+                    <td>62</td>↵
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td>DATABASE MANAGEMENT SYSTEMS LAB</td>
+                    <td>35</td>↵ <td>55</td>
+                    <td>90</td>↵
+                  </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td>NCC/NSS</td>
+                    <td>-</td>↵ <td>87</td>
+                    <td>87</td>↵
+                  </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td>OBJECT ORIENTED PROGRAMMING</td>
+                    <td>17</td>↵ <td>57</td>
+                    <td>74</td>↵
+                  </tr>
+                  <tr>
+                    <td>11.</td>
+                    <td>OBJECT ORIENTED PROGRAMMING LAB</td>
+                    <td>33</td>↵ <td>51</td>
+                    <td>84</td>↵
+                  </tr>
+                  <tr>
+                    <td>12.</td>
+                    <td>THEORY OF COMPUTATION</td>
+                    <td>22</td>↵ <td>55</td>
+                    <td>77</td>↵
+                  </tr>
+                </table>
+              </div>
+              <div class="flex-grid " style="margin-bottom:40px;">↵ <div class="row cells3 border no-margin">↵ <div
+                    class="cell colspan4 align-center no-margin" style="background-color:#EF5350;color: white;">↵ <div
+                      class="celldiv"><b>TOTAL - 949/1200</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#F98A00;color:white;">↵ <div
+                      class="celldiv"><b>PERCENTAGE - 79.08%</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#9C27B0;color: white;">↵
+                    <div class="celldiv"><b>Backlog(s) - 0</b></div>
+                  </div>
+                </div>
+                <div class="row cells2 border no-margin">
+                  <div class=" rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#E91E63;color: white;">↵ <div
+                      onclick='getcolgrank(4,"IT","BHARATI VIDYAPEETH COLLEGE OF ENGINEERING","2016")' class="celldiv">
+                      <b>COLLEGE RANK - 21/130</b><br /><span>(click here for all college ranks)</span></div>
+                  </div>
+                  <div class="rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#64DD17;color: white;">↵ <div onclick='getunivrank(4,"IT","2016","941")'
+                      class="celldiv"><b>UNIVERSITY RANK - 111/941</b><br /><span>(click here for all university
+                        ranks)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+          <div style="width:100%">↵ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>↵<ins class="adsbygoogle" ↵ style="display:block" ↵ data-ad-format="fluid" ↵
+              data-ad-layout-key="-fg+5n+6t-e7+r" ↵ data-ad-client="ca-pub-3843514829836885" ↵
+              data-ad-slot="5193204592"></ins>↵<script>
+              ↵↵
+              (adsbygoogle = window.adsbygoogle || []).push({});↵
+
+            </script>
+          </div>
+          <div class="panel collapsed" class="panel">
+            <div class="heading">↵ <span class="title">SEMESTER - 3</span>↵ </div>
+            <div class="content">
+              <div class="block-shadow" style="overflow:auto;font-size:13px;">
+                <table class="table striped hovered cell-hovered border bordered no-margin block-shadow">↵ <tr>↵ <th>
+                      <b>Sr. No.</b></td>↵
+                    <th><b>SUBJECT</b></td>↵
+                    <th><b>INTERNAL</b></td>↵
+                    <th><b>EXTERNAL</b></td>↵
+                    <th><b>TOTAL</b></td>↵
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>APPLIED MATHEMATICS - III</td>
+                    <td>15</td>↵ <td>52</td>
+                    <td>67</td>↵
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>CIRCUITS AND SYSTEMS</td>
+                    <td>19</td>↵ <td>38</td>
+                    <td>57</td>↵
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>CIRCUITS AND SYSTEMS LAB</td>
+                    <td>26</td>↵ <td>52</td>
+                    <td>78</td>↵
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>COMPUTER GRAPHICS AND MULTIMEDIA</td>
+                    <td>22</td>↵ <td>39</td>
+                    <td>61</td>↵
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>COMPUTER GRAPHICS AND MULTIMEDIA LAB</td>
+                    <td>36</td>↵ <td>55</td>
+                    <td>91</td>↵
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>DATA STRUCTURE</td>
+                    <td>14</td>↵ <td>48</td>
+                    <td>62</td>↵
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>DATA STRUCTURE LAB</td>
+                    <td>39</td>↵ <td>56</td>
+                    <td>95</td>↵
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td>FOUNDATION OF COMPUTER SCIENCE</td>
+                    <td>17</td>↵ <td>56</td>
+                    <td>73</td>↵
+                  </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td>SWITCHING THEORY AND LOGIC DESIGN</td>
+                    <td>10</td>↵ <td>27</td>
+                    <td>40</td>↵
+                  </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td>SWITCHING THEORY AND LOGIC DESIGN LAB</td>
+                    <td>33</td>↵ <td>44</td>
+                    <td>77</td>↵
+                  </tr>
+                </table>
+              </div>
+              <div class="flex-grid " style="margin-bottom:40px;">↵ <div class="row cells3 border no-margin">↵ <div
+                    class="cell colspan4 align-center no-margin" style="background-color:#EF5350;color: white;">↵ <div
+                      class="celldiv"><b>TOTAL - 701/1000</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#F98A00;color:white;">↵ <div
+                      class="celldiv"><b>PERCENTAGE - 70.1%</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#9C27B0;color: white;">↵
+                    <div class="celldiv"><b>Backlog(s) - 0</b></div>
+                  </div>
+                </div>
+                <div class="row cells2 border no-margin">
+                  <div class=" rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#E91E63;color: white;">↵ <div
+                      onclick='getcolgrank(3,"IT","BHARATI VIDYAPEETH COLLEGE OF ENGINEERING","2016")' class="celldiv">
+                      <b>COLLEGE RANK - 57/130</b><br /><span>(click here for all college ranks)</span></div>
+                  </div>
+                  <div class="rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#64DD17;color: white;">↵ <div onclick='getunivrank(3,"IT","2016","1003")'
+                      class="celldiv"><b>UNIVERSITY RANK - 184/1003</b><br /><span>(click here for all university
+                        ranks)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+          <div style="width:100%">↵ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>↵<ins class="adsbygoogle" ↵ style="display:block" ↵ data-ad-format="fluid" ↵
+              data-ad-layout-key="-fg+5n+6t-e7+r" ↵ data-ad-client="ca-pub-3843514829836885" ↵
+              data-ad-slot="5193204592"></ins>↵<script>
+              ↵↵
+              (adsbygoogle = window.adsbygoogle || []).push({});↵
+
+            </script>
+          </div>
+          <div class="panel collapsed" class="panel">
+            <div class="heading">↵ <span class="title">SEMESTER - 2</span>↵ </div>
+            <div class="content">
+              <div class="block-shadow" style="overflow:auto;font-size:13px;">
+                <table class="table striped hovered cell-hovered border bordered no-margin block-shadow">↵ <tr>↵ <th>
+                      <b>Sr. No.</b></td>↵
+                    <th><b>SUBJECT</b></td>↵
+                    <th><b>INTERNAL</b></td>↵
+                    <th><b>EXTERNAL</b></td>↵
+                    <th><b>TOTAL</b></td>↵
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>APPLIED MATHEMATICS-II</td>
+                    <td>12</td>↵ <td>53</td>
+                    <td>65</td>↵
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>APPLIED PHYSICS LAB-II</td>
+                    <td>34</td>↵ <td>43</td>
+                    <td>77</td>↵
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>APPLIED PHYSICS-II</td>
+                    <td>11</td>↵ <td>52</td>
+                    <td>63</td>↵
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>COMMUNICATIONS SKILLS</td>
+                    <td>13</td>↵ <td>51</td>
+                    <td>64</td>↵
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>ELECTRONIC DEVICES</td>
+                    <td>14</td>↵ <td>41</td>
+                    <td>55</td>↵
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>ELECTRONIC DEVICES LAB.</td>
+                    <td>29</td>↵ <td>44</td>
+                    <td>73</td>↵
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>ENGINEERING MECHANICS</td>
+                    <td>9</td>↵ <td>39</td>
+                    <td>48</td>↵
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td>ENGINEERING MECHANICS LAB</td>
+                    <td>24</td>↵ <td>39</td>
+                    <td>63</td>↵
+                  </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td>ENVIRONMENTAL STUDIES</td>
+                    <td>15</td>↵ <td>47</td>
+                    <td>62</td>↵
+                  </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td>ENVIRONMENTAL STUDIES LAB</td>
+                    <td>29</td>↵ <td>53</td>
+                    <td>82</td>↵
+                  </tr>
+                  <tr>
+                    <td>11.</td>
+                    <td>INTRODUCTION TO PROGRAMMING</td>
+                    <td>20</td>↵ <td>35</td>
+                    <td>55</td>↵
+                  </tr>
+                  <tr>
+                    <td>12.</td>
+                    <td>PROGRAMMING LAB</td>
+                    <td>36</td>↵ <td>54</td>
+                    <td>90</td>↵
+                  </tr>
+                </table>
+              </div>
+              <div class="flex-grid " style="margin-bottom:40px;">↵ <div class="row cells3 border no-margin">↵ <div
+                    class="cell colspan4 align-center no-margin" style="background-color:#EF5350;color: white;">↵ <div
+                      class="celldiv"><b>TOTAL - 797/1200</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#F98A00;color:white;">↵ <div
+                      class="celldiv"><b>PERCENTAGE - 66.42%</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#9C27B0;color: white;">↵
+                    <div class="celldiv"><b>Backlog(s) - 0</b></div>
+                  </div>
+                </div>
+                <div class="row cells2 border no-margin">
+                  <div class=" rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#E91E63;color: white;">↵ <div
+                      onclick='getcolgrank(2,"IT","BHARATI VIDYAPEETH COLLEGE OF ENGINEERING","2016")' class="celldiv">
+                      <b>COLLEGE RANK - 70/115</b><br /><span>(click here for all college ranks)</span></div>
+                  </div>
+                  <div class="rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#64DD17;color: white;">↵ <div onclick='getunivrank(2,"IT","2016","863")'
+                      class="celldiv"><b>UNIVERSITY RANK - 246/863</b><br /><span>(click here for all university
+                        ranks)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+          <div style="width:100%">↵ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>↵<ins class="adsbygoogle" ↵ style="display:block" ↵ data-ad-format="fluid" ↵
+              data-ad-layout-key="-fg+5n+6t-e7+r" ↵ data-ad-client="ca-pub-3843514829836885" ↵
+              data-ad-slot="5193204592"></ins>↵<script>
+              ↵↵
+              (adsbygoogle = window.adsbygoogle || []).push({});↵
+
+            </script>
+          </div>
+          <div class="panel collapsed" class="panel">
+            <div class="heading">↵ <span class="title">SEMESTER - 1</span>↵ </div>
+            <div class="content">
+              <div class="block-shadow" style="overflow:auto;font-size:13px;">
+                <table class="table striped hovered cell-hovered border bordered no-margin block-shadow">↵ <tr>↵ <th>
+                      <b>Sr. No.</b></td>↵
+                    <th><b>SUBJECT</b></td>↵
+                    <th><b>INTERNAL</b></td>↵
+                    <th><b>EXTERNAL</b></td>↵
+                    <th><b>TOTAL</b></td>↵
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>APPLIED CHEMISTRY</td>
+                    <td>15</td>↵ <td>42</td>
+                    <td>57</td>↵
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>APPLIED CHEMISTRY LAB</td>
+                    <td>32</td>↵ <td>49</td>
+                    <td>81</td>↵
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>APPLIED MATHEMATICS-I</td>
+                    <td>11</td>↵ <td>61</td>
+                    <td>72</td>↵
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>APPLIED PHYSICS LAB-I</td>
+                    <td>30</td>↵ <td>48</td>
+                    <td>78</td>↵
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>APPLIED PHYSICS-I</td>
+                    <td>17</td>↵ <td>49</td>
+                    <td>66</td>↵
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>ELECTRICAL TECHNOLOGY</td>
+                    <td>14</td>↵ <td>45</td>
+                    <td>59</td>↵
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>ELECTRICAL TECHNOLOGY LAB</td>
+                    <td>25</td>↵ <td>51</td>
+                    <td>76</td>↵
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td>ENGINEERING GRAPHICS LAB</td>
+                    <td>37</td>↵ <td>45</td>
+                    <td>82</td>↵
+                  </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td>FUNDAMENTALS OF COMPUTING</td>
+                    <td>19</td>↵ <td>33</td>
+                    <td>52</td>↵
+                  </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td>FUNDAMENTALS OF COMPUTING LAB</td>
+                    <td>35</td>↵ <td>52</td>
+                    <td>87</td>↵
+                  </tr>
+                  <tr>
+                    <td>11.</td>
+                    <td>HUMAN VALUES AND PROFESSIONAL ETHICS-I</td>
+                    <td>-</td>↵ <td>75</td>
+                    <td>75</td>↵
+                  </tr>
+                  <tr>
+                    <td>12.</td>
+                    <td>MANUFACTURING PROCESSES</td>
+                    <td>15</td>↵ <td>59</td>
+                    <td>74</td>↵
+                  </tr>
+                  <tr>
+                    <td>13.</td>
+                    <td>WORKSHOP PRACTICE</td>
+                    <td>32</td>↵ <td>46</td>
+                    <td>78</td>↵
+                  </tr>
+                </table>
+              </div>
+              <div class="flex-grid " style="margin-bottom:40px;">↵ <div class="row cells3 border no-margin">↵ <div
+                    class="cell colspan4 align-center no-margin" style="background-color:#EF5350;color: white;">↵ <div
+                      class="celldiv"><b>TOTAL - 937/1300</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#F98A00;color:white;">↵ <div
+                      class="celldiv"><b>PERCENTAGE - 72.08%</b></div>
+                  </div>
+                  <div class="cell colspan4 align-center no-margin" style="background-color:#9C27B0;color: white;">↵
+                    <div class="celldiv"><b>Backlog(s) - 0</b></div>
+                  </div>
+                </div>
+                <div class="row cells2 border no-margin">
+                  <div class=" rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#E91E63;color: white;">↵ <div
+                      onclick='getcolgrank(1,"IT","BHARATI VIDYAPEETH COLLEGE OF ENGINEERING","2016")' class="celldiv">
+                      <b>COLLEGE RANK - 44/117</b><br /><span>(click here for all college ranks)</span></div>
+                  </div>
+                  <div class="rankdiv cell colspan6 align-center no-margin"
+                    style="background-color:#64DD17;color: white;">↵ <div onclick='getunivrank(1,"IT","2016","879")'
+                      class="celldiv"><b>UNIVERSITY RANK - 160/879</b><br /><span>(click here for all university
+                        ranks)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+          <div id="aggregate2" hidden><b>AGGREGATE - 74.2319%</b></div>
+          <div id="back" hidden><b>PENDING BACKLOGS - 0</b></div>↵
+        </div>↵ <form id="form" target="_blank" name="colgrankform" action="rankcolg.php" method="POST">↵ <input
+            id="sem" type="hidden" name="sem" value="">↵ <input id="branch" type="hidden" name="branch" value="">↵
+          <input id="college" type="hidden" name="college" value="">↵ <input id="batch" type="hidden" name="batch"
+            value="">↵ <input id="enrol" type="hidden" name="enrol" value=01651203116>↵ </form>↵ <form id="form"
+          target="_blank" name="univrankform" action="rankuniv.php" method="POST">↵ <input id="sem2" type="hidden"
+            name="sem" value="">↵ <input id="univrank" type="hidden" name="univrankcount" value="">↵ <input id="branch2"
+            type="hidden" name="branch" value="">↵ <input id="batch2" type="hidden" name="batch" value="">↵ <input
+            id="enrol2" type="hidden" name="enrol" value=01651203116>↵ </form>↵↵ <script>
+          ↵
+          window.onload = function () {
+              ↵
+              $('#pageloader').remove();↵
+              document.getElementById("wrapper").style.visibility = "visible";↵
+              if (document.getElementById("aggregate2")) {
+                ↵
+                $(function () {
+                  ↵
+                  $(".panel").panel();↵
+                });↵
+                var aggr = document.getElementById("aggregate2").innerHTML;↵
+                var back = document.getElementById("back").innerHTML;↵
+                document.getElementById("aggregate").innerHTML = aggr;↵
+                document.getElementById("pendingback").innerHTML = back;↵
+              }↵ //     setTimeout(function(){↵    //       if(!document.getElementById('gdLaqoShGAKM')){↵    //     document.getElementById('TcaNMQldkibe').style.display='block';↵    //    jQuery("#wrapper").css({"filter":"blur(10px)"});↵    //  };↵    //     },3000↵    //   );↵↵        $('[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."').parent().remove();↵       };↵↵
+
+        </script>↵↵ </div>↵ <script type="text/javascript" language="javascript">
+        ↵
+        var aax_size = '300x250';↵
+        var aax_pubname = 'ipuresults-21';↵
+        var aax_src = '302';↵
+
+      </script>↵ <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js">
+      </script>↵ ↵
+      <!-- ipuresultsbottomad -->↵<ins class="adsbygoogle" ↵ style="display:block" ↵
+        data-ad-client="ca-pub-3843514829836885" ↵ data-ad-slot="1153408305" ↵ data-ad-format="auto"></ins>↵<script>
+        ↵
+        (adsbygoogle = window.adsbygoogle || []).push({});↵
+
+      </script>↵↵ </div>↵ </div>↵ <footer>↵ <div class="flex-grid " style="margin:auto;background-color:#353546;"
+      id="footergrid">↵↵ <div class="row cells2">↵ <div class="cell padding20 colspan3 align-center"
+          style="color:white;border:1px solid white">↵ <nav>↵ <a href="index.html">Home</a><br /><br />↵ <a
+              href="getcolgrank.html">College Ranks</a><br /><br />↵ <a href="getunivrank.html">University
+              Ranks</a><br /><br />↵ <a href="disclaimer.html">Disclaimer</a><br /><br />↵ <a
+              href="contact.html">Contact</a><br /><br />↵ </nav>↵ </div>↵ <div class="cell colspan9"
+          style="border:1px solid white">↵ <div class="fg-white padding20 no-padding-bottom align-left">↵ <div
+              style="margin-left:100px">↵ <b>DISCLAIMER</b>↵ </div>↵ <ul>↵ ↵ <li>↵ All Results have been compiled from
+                Result files available at IPU website.↵ </li>↵ <li>↵ Resuls are compiled automatically using scripts due
+                to which some results may not have been compiled.↵ </li>↵ <li>↵ Please confirm your results from ipu
+                website or marksheets before using it for any purpose.↵ </li>↵ </ul>↵ </div>↵ </div>↵ </div>↵ <div
+        class="row cells1 align-center">↵ <div class="cell colspan12 fg-white"
+          style="background-color:#353546;padding:10px">↵ Website Designed &amp; Maintained by Rajat Gupta(IT GTBIT 2013
+          Batch)<br /><br />↵ REPORT ANY DISCREPANCIES IN THE RESULTS OR GIVE FEEDBACK/SUGGESTIONS AT
+          guptarajat846@gmail.com↵ </div>↵↵ </div>↵↵↵↵ </div>↵ </footer>↵
+  <!-- Histats.com  START  (aync)-->↵<script type="text/javascript">
+    var _Hasync = _Hasync || [];↵
+    _Hasync.push(['Histats.start', '1,3886367,4,0,0,0,00010000']);↵
+    _Hasync.push(['Histats.fasi', '1']);↵
+    _Hasync.push(['Histats.track_hits', '']);↵
+    (function () {
+      ↵
+      var hs = document.createElement('script');
+      hs.type = 'text/javascript';
+      hs.async = true;↵
+      hs.src = ('//s10.histats.com/js15_as.js');↵
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);↵
+    })();
+
+  </script>↵<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?3886367&101"
+        alt="web hit counter" border="0"></a></noscript>↵
+  <!-- Histats.com  END  -->↵ </body>↵
+
+</html>"

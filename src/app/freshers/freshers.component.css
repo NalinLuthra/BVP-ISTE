@@ -1,0 +1,18 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://i.ibb.co/FqRrshV/sheldon.jpg');
+  background-size: cover;
+}
+
+
+
+.mat-grid-tile{
+  overflow: visible;
+}
+
+.mat-grid-tile .mat-figure :required{
+  display: block;
+}
