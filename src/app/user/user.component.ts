@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { userProfile } from '../users_profile';
 
-import {RegisterService} from '../register.service'
+import {RegisterService} from '../register.service';
 
 @Component({
   selector: 'app-user',

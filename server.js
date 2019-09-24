@@ -4,16 +4,18 @@ const path = require('path');
 const mongo = require('mongoose');
 const bodyParser = require('body-parser');
 const multer = require('multer');
+const request = require('request');
 
 
 const upload = multer({dest: 'upload/'})
 
 var db = mongo.connect("mongodb://localhost:27017/iste",(err, response) => {
     if(err){
-        console.log(err);
+        // console.log(err);
     }
     else{
-        console.log("Connected to " , db, response);
+        // console.log("Connected to " , db, response);
+        console.log("Connected to DataBase");
     }
 })
 
@@ -95,6 +97,25 @@ app.get("/getTeam",function(req,res){
                     }
             });
     })
+
+app.get("/getResult", function(req,res){
+  console.log(req.query);
+  var options = { method: 'POST',
+  url: 'http://ipuresults.co.in/getresult.php',
+  headers:
+    { 'Postman-Token': '45829004-d71f-4ad6-83d8-b230853cebea',
+      'cache-control': 'no-cache',
+      'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' },
+  formData: { enrolment: req.query.enrolment, branch: req.query.branch } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    res.send(body);
+    // console.log(body);
+  });
+
+})
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/yearbook'));
 

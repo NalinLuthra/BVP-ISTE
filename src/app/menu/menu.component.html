@@ -11,176 +11,201 @@ button{
 }
 </style> -->
 
+<mat-sidenav-container class="container">
 
-<mat-toolbar color="primary" style="position: fixed; top: 0%; left:0%; z-index: 1;">
-    <span class=".d-none">
+    <mat-sidenav-content>
 
-  <!-- <mat-menu #menu="matMenu">
-      <button class="mobile" mat-menu-item routerLink="/home">
-        <span routerLink="/home"><img src="assets/img/logo.png" style="width: 20px; position:inherit;" alt="BVP ISTE"></span>
-        <span style="color: #e81d29 ">  Ho</span> <span style="color: #8cc340">mep</span> <span style="color: #f8d918">age</span>
+      <mat-toolbar color="primary" style="position: fixed; top: 0%; left:0%; z-index: 3;">
+
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <button mat-menu-item routerLink="/home">
+    <!-- <mat-icon>home </mat-icon> -->
+    <span routerLink="/home"><img src="assets/img/logo.png" style="width: 20px; position:inherit;"
+        alt="BVP ISTE"></span>
+    <span style="color: #e81d29 "> Ho</span> <span style="color: #8cc340">mep</span> <span
+      style="color: #f8d918">age</span>
+  </button>
+  <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/result">
+        <mat-icon>school</mat-icon>
+        Result
       </button>
-      <button class="mobile" mat-menu-item  >
+      <button mat-menu-item routerLink="/sigs">
         <mat-icon>school</mat-icon>
         SIGs
       </button>
-      <button class="mobile" mat-menu-item  >
+      <button mat-menu-item routerLink="/freshers_column">
         <mat-icon>fiber_new</mat-icon>
         Fresher
       </button>
-      <button class="mobile" mat-menu-item   [matMenuTriggerFor]="Yearbook2019">
+      <button mat-menu-item [matMenuTriggerFor]="Yearbook2019">
         <mat-icon>book</mat-icon>
         Yearbook
       </button>
-      <button class="mobile" mat-menu-item  [matMenuTriggerFor]="team" >
+      <button mat-menu-item [matMenuTriggerFor]="team">
         <mat-icon>group</mat-icon>
         Team
       </button>
-      <button class="mobile" mat-menu-item  [matMenuTriggerFor]="team" >
+      <button mat-menu-item [matMenuTriggerFor]="team">
         <mat-icon>event</mat-icon>
         Events
       </button>
-      <button  class="mobile" mat-menu-item  >
+      <button mat-menu-item>
         <mat-icon>image</mat-icon>
         Gallery
       </button>
 
-      <button class="mobile" mat-menu-item  (click)="openBottomSheet()" >
+      <button mat-menu-item (click)="openBottomSheet()">
         <mat-icon> contacts</mat-icon>
         Contact Us
       </button>
 
-      <button class="mobile" mat-menu-item [routerLink]="['/teamRegistration']">
+      <button mat-menu-item [routerLink]="['/teamRegistration']">
         <mat-icon>save</mat-icon>
         Register
       </button>
-    </mat-menu> -->
-  <mat-toolbar-row>
-      <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  </mat-menu>
 
-          <mat-icon>more_vert</mat-icon>
-      </button> -->
+  </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-      <button mat-menu-item routerLink="/home">
-        <!-- <mat-icon>home </mat-icon> -->
-        <span routerLink="/home"><img src="assets/img/logo.png" style="width: 20px; position:inherit;" alt="BVP ISTE"></span>
-        <span style="color: #e81d29 ">  Ho</span> <span style="color: #8cc340">mep</span> <span style="color: #f8d918">age</span>
-      </button>
-      <button mat-menu-item  >
-        <mat-icon>school</mat-icon>
-        SIGs
-      </button>
-      <button mat-menu-item  >
-        <mat-icon>fiber_new</mat-icon>
-        Fresher
-      </button>
-      <button mat-menu-item   [matMenuTriggerFor]="Yearbook2019" >
-        <mat-icon>book</mat-icon>
-        Yearbook
-      </button>
-      <button mat-menu-item  [matMenuTriggerFor]="team"  >
-        <mat-icon>group</mat-icon>
-        Team
-      </button>
-      <button mat-menu-item  [matMenuTriggerFor]="team"  >
-        <mat-icon>event</mat-icon>
-        Events
-      </button>
-      <button mat-menu-item  >
-        <mat-icon>image</mat-icon>
-        Gallery
-      </button>
+<mat-sidenav-container class="container d-none d-sm-block d-sm-none d-md-block">
 
-      <button mat-menu-item  (click)="openBottomSheet()" >
-        <mat-icon> contacts</mat-icon>
-        Contact Us
-      </button>
+  <mat-sidenav-content>
 
-      <button mat-menu-item [routerLink]="['/teamRegistration']" >
-        <mat-icon>save</mat-icon>
-        Register
-      </button>
+    <mat-toolbar color="primary" style="position: fixed; top: 0%; left:0%; z-index: 1;">
 
-   <!-- Button is over here  -->
-    <mat-menu #Yearbook2019="matMenu" >
-        <button mat-menu-item [matMenuTriggerFor]="classes">
+        <mat-toolbar-row>
+
+          <button mat-menu-item routerLink="/home">
+            <!-- <mat-icon>home </mat-icon> -->
+            <span routerLink="/home"><img src="assets/img/logo.png" style="width: 20px; position:inherit;"
+                alt="BVP ISTE"></span>
+            <span style="color: #e81d29 "> Ho</span> <span style="color: #8cc340">mep</span> <span
+              style="color: #f8d918">age</span>
+          </button>
+          <button mat-menu-item routerLink="/result">
+            <mat-icon>school</mat-icon>
+            Result
+          </button>
+          <button mat-menu-item routerLink="/sigs">
+            <mat-icon>school</mat-icon>
+            SIGs
+          </button>
+          <button mat-menu-item routerLink="/freshers_column">
+            <mat-icon>fiber_new</mat-icon>
+            Fresher
+          </button>
+          <button mat-menu-item [matMenuTriggerFor]="Yearbook2019">
+            <mat-icon>book</mat-icon>
+            Yearbook
+          </button>
+          <button mat-menu-item [matMenuTriggerFor]="team">
             <mat-icon>group</mat-icon>
-            <span>2019-2020</span>
-        </button>
-    </mat-menu>
-    <mat-menu #classes="matMenu" >
-        <button mat-menu-item [matMenuTriggerFor]="shift_cs">
-            <mat-icon>computer icon</mat-icon>
-            <span>Computer Science</span>
-        </button>
-        <button mat-menu-item [matMenuTriggerFor]="shift_it">
-            <mat-icon>memory</mat-icon>
-            <span>Information Technology</span>
-        </button>
-        <button mat-menu-item [matMenuTriggerFor]="shift_ece">
-            <mat-icon>developer_board</mat-icon>
-            <span>ECE</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>flash_on</mat-icon>
-            <span>EEE</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>ac_unit</mat-icon>
-            <span>ICE</span>
-        </button>
-    </mat-menu>
+            Team
+          </button>
+          <button mat-menu-item [matMenuTriggerFor]="team">
+            <mat-icon>event</mat-icon>
+            Events
+          </button>
+          <button mat-menu-item>
+            <mat-icon>image</mat-icon>
+            Gallery
+          </button>
 
-    <mat-menu #shift_cs="matMenu">
-    <button mat-menu-item>
-        <mat-icon>wb_sunny</mat-icon>
-        <span>Morning</span>
-    </button>
-    <button mat-menu-item>
-        <mat-icon>brightness_2</mat-icon>
-        <span>Evening</span>
-    </button>
-    </mat-menu>
+          <button mat-menu-item (click)="openBottomSheet()">
+            <mat-icon> contacts</mat-icon>
+            Contact Us
+          </button>
 
-    <mat-menu #shift_it="matMenu">
-        <button mat-menu-item>
-            <mat-icon>wb_sunny</mat-icon>
-            <span>Morning</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>star</mat-icon>
-            <span>Evening</span>
-        </button>
-    </mat-menu>
+          <button mat-menu-item [routerLink]="['/teamRegistration']">
+            <mat-icon>save</mat-icon>
+            Register
+          </button>
 
-    <mat-menu #shift_ece="matMenu">
-        <button mat-menu-item [matMenuTriggerFor]="shift_ece_1">
-            <mat-icon>wb_sunny</mat-icon>
-            <span>Morning</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>brightness_2</mat-icon>
-            <span>Evening</span>
-        </button>
-    </mat-menu>
+          <!-- Button is over here  -->
+          <mat-menu #Yearbook2019="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="classes">
+              <mat-icon>group</mat-icon>
+              <span>2019-2020</span>
+            </button>
+          </mat-menu>
+          <mat-menu #classes="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="shift_cs">
+              <mat-icon>computer icon</mat-icon>
+              <span>Computer Science</span>
+            </button>
+            <button mat-menu-item [matMenuTriggerFor]="shift_it">
+              <mat-icon>memory</mat-icon>
+              <span>Information Technology</span>
+            </button>
+            <button mat-menu-item [matMenuTriggerFor]="shift_ece">
+              <mat-icon>developer_board</mat-icon>
+              <span>ECE</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>flash_on</mat-icon>
+              <span>EEE</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>ac_unit</mat-icon>
+              <span>ICE</span>
+            </button>
+          </mat-menu>
 
-    <mat-menu #shift_ece_1="matMenu">
-        <button mat-menu-item>
-            <mat-icon>filter_1</mat-icon>
-            <span>ECE 1</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>filter_2</mat-icon>
-            <span>ECE 2</span>
-        </button>
-    </mat-menu>
+          <mat-menu #shift_cs="matMenu">
+            <button mat-menu-item>
+              <mat-icon>wb_sunny</mat-icon>
+              <span>Morning</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>brightness_2</mat-icon>
+              <span>Evening</span>
+            </button>
+          </mat-menu>
 
-    <mat-menu #team="matMenu">
-      <button mat-menu-item routerLink="/team2019">
-        <mat-icon>group</mat-icon>
-        <span>2019-2020</span>
-      </button>
-      <!-- <button mat-menu-item disabled>
+          <mat-menu #shift_it="matMenu">
+            <button mat-menu-item>
+              <mat-icon>wb_sunny</mat-icon>
+              <span>Morning</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>star</mat-icon>
+              <span>Evening</span>
+            </button>
+          </mat-menu>
+
+          <mat-menu #shift_ece="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="shift_ece_1">
+              <mat-icon>wb_sunny</mat-icon>
+              <span>Morning</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>brightness_2</mat-icon>
+              <span>Evening</span>
+            </button>
+          </mat-menu>
+
+          <mat-menu #shift_ece_1="matMenu">
+            <button mat-menu-item>
+              <mat-icon>filter_1</mat-icon>
+              <span>ECE 1</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>filter_2</mat-icon>
+              <span>ECE 2</span>
+            </button>
+          </mat-menu>
+
+          <mat-menu #team="matMenu">
+            <button mat-menu-item routerLink="/team2019">
+              <mat-icon>group</mat-icon>
+              <span>2019-2020</span>
+            </button>
+            <!-- <button mat-menu-item disabled>
         <mat-icon>voicemail</mat-icon>
         <span>Check voicemail</span>
       </button>
@@ -188,8 +213,10 @@ button{
         <mat-icon>notifications_off</mat-icon>
         <span>Disable alerts</span>
       </button> -->
-    </mat-menu>
-  </mat-toolbar-row>
-</span>
+          </mat-menu>
+        </mat-toolbar-row>
 
-</mat-toolbar>
+    </mat-toolbar>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

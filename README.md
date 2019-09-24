@@ -1,4 +1,9 @@
-# Yearbook
+# Simple Demo Of Website
+
+![](website-demo.gif)
+
+
+# BVP ISTE
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatBottomSheet, MatBottomSheetRef} from '@angular/material';
 import {BottomSheetOverviewExampleSheet} from './../BottomSheet/bottom-sheet-overview-example-sheet'
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -10,12 +11,17 @@ import {BottomSheetOverviewExampleSheet} from './../BottomSheet/bottom-sheet-ove
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private bottomSheet: MatBottomSheet) { }
+
+  constructor(private bottomSheet: MatBottomSheet) {
+  }
 
   openBottomSheet(): void {
     this.bottomSheet.open(BottomSheetOverviewExampleSheet);
   }
   ngOnInit() {
+
+
+
   }
 
 }

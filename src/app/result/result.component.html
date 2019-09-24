@@ -1,0 +1,39 @@
+<mat-card class="example-card" style="top:100px; width: 80%; margin: auto;">
+  <!-- <div style="position: relative; top: 100px"> -->
+  <mat-card-header>
+    <mat-card-title><b>Get result</b></mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <br>
+  <mat-card-content>
+    <form>
+    <mat-form-field>
+      <input matInput placeholder="Enter Enrollment No." (input)="enrolment = $event.target.value" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-select matNativeControl placeholder="Select Stream" [(value)]="branch" required>
+        <mat-option value="sel">Select Stream</mat-option>
+        <mat-option value="CS">Computer Science &amp; Engineering</mat-option>
+        <mat-option value="IT">Information Technology</mat-option>
+        <mat-option value="EC">Electronics &amp; Communication Engineering</mat-option>
+        <mat-option value="CIVIL">Civil Engineering</mat-option>
+        <mat-option value="MAE">Mechanical &amp; Automation Engineering</mat-option>
+        <mat-option value="EEE">Electrical &amp; Electronics Engineering</mat-option>
+        <mat-option value="ENE">Environmental Engineering</mat-option>
+        <mat-option value="ICE">Instrumentation &amp; Control Engineering</mat-option>
+        <mat-option value="PE">Power Engineering</mat-option>
+        <mat-option value="TE">Tools Engineering</mat-option>
+        <mat-option value="EE">Electrical Engineering</mat-option>
+        <mat-option value="ME">Mechanical Engineering</mat-option>
+        <mat-option value="MET">Mechatronics</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+  </form>
+  <button mat-raised-button color="primary" (click)="get_value()">GET RESULT</button>
+  </mat-card-content>
+  <!-- </div> -->
+</mat-card>
+
+<div [innerHtml]=innerHtml style="position: relative; top: 120px;"></div>
