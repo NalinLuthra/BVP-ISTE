@@ -11,51 +11,53 @@ import { delay } from 'q';
 interface FoodNode {
   name: string;
   disc: string;
-  link: string;
-  link_text: string;
-  link_c: boolean;
+  // link: string;
+  // link_text: string;
+  // link_c: boolean;
   children?: FoodNode[];
 }
 
-// const TREE_DATA: FoodNode[] = [
-//   {
-//     name: 'Notes', disc:"<b>Test it here </b> is it working",
-//     children: [
-//       {name: 'Notes Hub', disc:"Test it here is it working",link_c:true ,link:'here', link_text:'Click here to open website'},
-//       {name: 'Written Notes', disc:"<b>Test it here </b> is it working 2"},
-//     ]
-//   }, {
-//     name: 'Files/Practicals',
-//     children: [
-//       { name: 'Files' },
-//       { name: 'Practical'},
-//     ]
-//   }, {
-//     name: 'Exam Preprations',
-//     children:[
-//       {name: 'Last minute preprations'},
-//       {name: 'Exam Videos'}
-//     ]
-//   }, {
-//     name: 'Marks',
-//     children:[
-//       {name: 'How to score marks ?'},
-//       {name: 'Importance of marks'},
-//       {name: 'How much marks are sufficient ?'}
-//     ]
-//   }, {
-//     name: 'Sports',
-//     children:[
-//       {name: 'When you are allowed to play ?'},
-//       {name: 'How to get sports equipments ?'},
-//       {name: 'Hacks to play'}
-//     ]
-//   }, {
-//     name: 'Hack-enjoy',
-//     children:[
-//       {name: 'Extra time with friends'},
-//     ]
-//   }
+const TREE_DATA: FoodNode[] = [
+  {
+    name: 'Notes', disc:"<b>Test it here </b> is it working",
+    children: [
+      // {name: 'Notes Hub', disc:"Test it here is it working", link_c:true ,link:'here', link_text:'Click here to open website'},
+      {name: 'Written Notes', disc:"<b>Test it here </b> is it working 2"},
+    ]
+  }
+  ];
+  // }, {
+  //   name: 'Files/Practicals',
+  //   children: [
+  //     { name: 'Files' },
+  //     { name: 'Practical'},
+  //   ]
+  // }, {
+  //   name: 'Exam Preprations',
+  //   children:[
+  //     {name: 'Last minute preprations'},
+  //     {name: 'Exam Videos'}
+  //   ]
+  // }, {
+  //   name: 'Marks',
+  //   children:[
+  //     {name: 'How to score marks ?'},
+  //     {name: 'Importance of marks'},
+  //     {name: 'How much marks are sufficient ?'}
+  //   ]
+  // }, {
+  //   name: 'Sports',
+  //   children:[
+  //     {name: 'When you are allowed to play ?'},
+  //     {name: 'How to get sports equipments ?'},
+  //     {name: 'Hacks to play'}
+  //   ]
+  // }, {
+  //   name: 'Hack-enjoy',
+  //   children:[
+  //     {name: 'Extra time with friends'},
+  //   ]
+  // }
 // ];
 
 /** Flat node with expandable and level information */
