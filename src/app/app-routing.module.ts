@@ -3,8 +3,8 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { HompageComponent } from './hompage/hompage.component';
 import {UserComponent} from './user/user.component';
 import {TeamRegistrationComponent} from './team-registration/team-registration.component';
-import {SIGComponent} from './sig/sig.component';
-import { FreshersComponent } from './freshers/freshers.component'
+// import {SIGComponent} from './sig/sig.component';
+// import { FreshersComponent } from './freshers/freshers.component'
 
 
 const routerOptions: ExtraOptions = {
@@ -19,8 +19,8 @@ const routes: Routes = [
   {path: 'home', component: HompageComponent},
   {path: 'team2019', component: UserComponent},
   {path: 'teamRegistration', component: TeamRegistrationComponent},
-  {path: 'sigs', component: SIGComponent},
-  {path: 'freshers_column', component: FreshersComponent}
+  // {path: 'sigs', component: SIGComponent},
+  // {path: 'freshers_column', component: FreshersComponent}
 ];
 
 @NgModule({
