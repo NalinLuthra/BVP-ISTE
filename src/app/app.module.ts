@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 // List of Components
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
-import { LoginComponent } from './login/login.component';
+// import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { HompageComponent } from './hompage/hompage.component';
 import { TeamRegistrationComponent } from './team-registration/team-registration.component';
@@ -51,7 +51,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 // Virtual Scroll
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgImageSliderModule } from 'ng-image-slider';
-import { RegisterComponent } from './register/register.component';
+// import { RegisterComponent } from './register/register.component';
 // import { SIGComponent } from './sig/sig.component';
 // import { FreshersComponent } from './freshers/freshers.component';
 
@@ -59,13 +59,13 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     AppComponent,
     UserComponent,
-    LoginComponent,
+    // LoginComponent,
     HeaderComponent,
     MenuComponent,
     HompageComponent,
     BottomSheetOverviewExampleSheet,
     TeamRegistrationComponent,
-    RegisterComponent,
+    // RegisterComponent,
     // SIGComponent,
     // FreshersComponent,
 

@@ -64,17 +64,17 @@ var TeamUser = new Schema ({
     memberImageD: {type: String}
     })
 
-var User = new Schema({
-  id: {type: number},
-  username: {type: string},
-  password: {type: string},
-  firstname: {type: string},
-  lastname: {type: string},
-  token: {type: string}
-})
+// var User = new Schema({
+//   id: {type: number},
+//   username: {type: string},
+//   password: {type: string},
+//   firstname: {type: string},
+//   lastname: {type: string},
+//   token: {type: string}
+// })
 
 var model = mongo.model('team', TeamUser, 'team');
-var User_model = mongo.model('user', User);
+// var User_model = mongo.model('user', User);
 
 module.exports.register = (req,res,next) => {
   var user = new User();
