@@ -10,4 +10,5 @@ export class userProfile {
   instagramId: string;
   linkedinId: string;
   twitterLink: string;
+  image: string;
 }

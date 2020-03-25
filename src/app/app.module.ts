@@ -51,6 +51,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 // Virtual Scroll
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { RegisterComponent } from './register/register.component';
 // import { SIGComponent } from './sig/sig.component';
 // import { FreshersComponent } from './freshers/freshers.component';
 
@@ -64,6 +65,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     HompageComponent,
     BottomSheetOverviewExampleSheet,
     TeamRegistrationComponent,
+    RegisterComponent,
     // SIGComponent,
     // FreshersComponent,
 

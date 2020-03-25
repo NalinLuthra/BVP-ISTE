@@ -3,6 +3,8 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { HompageComponent } from './hompage/hompage.component';
 import {UserComponent} from './user/user.component';
 import {TeamRegistrationComponent} from './team-registration/team-registration.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 // import {SIGComponent} from './sig/sig.component';
 // import { FreshersComponent } from './freshers/freshers.component'
 
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path: 'home', component: HompageComponent},
   {path: 'team2019', component: UserComponent},
   {path: 'teamRegistration', component: TeamRegistrationComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent}
   // {path: 'sigs', component: SIGComponent},
   // {path: 'freshers_column', component: FreshersComponent}
 ];

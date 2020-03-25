@@ -5,19 +5,28 @@ const mongo = require('mongoose');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 
+// const storage = multer.diskStorage({
+//   destination: (req, file, callback) => {
+//     callback(null, 'upload')
+//   },
+
+//   filename: (req, file, callback) => {
+//     callback(null, `Profile_${file.originalname}`)
+//   }
+// })
 
 const upload = multer({dest: 'upload/'})
 
 var db = mongo.connect("mongodb://localhost:27017/iste",(err, response) => {
     if(err){
-        console.log(err);
+        console.log( "Error ",err);
     }
     else{
         console.log("Connected to " , db, response);
     }
 })
 
-console.log(db)
+// console.log(db)
 
 const app = express();
 
@@ -52,14 +61,42 @@ var TeamUser = new Schema ({
     instagramId: {type: String},
     linkedinId: {type: String},
     twitterId: {type: String},
-    memberImage: {type: String}
+    memberImageD: {type: String}
     })
 
+var User = new Schema({
+  id: {type: number},
+  username: {type: string},
+  password: {type: string},
+  firstname: {type: string},
+  lastname: {type: string},
+  token: {type: string}
+})
+
 var model = mongo.model('team', TeamUser, 'team');
+var User_model = mongo.model('user', User);
 
+module.exports.register = (req,res,next) => {
+  var user = new User();
+  user.firstname = req.body.firstname;
+  user.lastname = req.body.lastname;
+  user.id = req.body.id;
+  user.password = req.body.password;
+  user.username = req.body.username;
 
-app.post("/addTeam",upload.single('memberImage'),function(req,res){
-    console.log(req.file);
+  user.save((err,doc) => {
+    if(!err)
+      res.send(doc);
+    else {
+      console.log(err);
+    }
+  })
+}
+
+app.post("/addTeam",function(req,res){
+    console.log(req);
+    // const file = req.file;
+    // console.log(file.filename)
     var mod = new model({
     _id : new mongo.Types.ObjectId(),
     name: req.body.name,
@@ -73,8 +110,10 @@ app.post("/addTeam",upload.single('memberImage'),function(req,res){
     instagramId: req.body.instagramId,
     linkedinId: req.body.linkedinId,
     twitterId: req.body.twitterId,
-    memberImage: req.file.path});
+    memberImageD: req.body.memberImage
+  });
         mod.save(function(err,data){
+            console.log(data)
             if(err){
                 res.send(err);
             }
@@ -83,6 +122,14 @@ app.post("/addTeam",upload.single('memberImage'),function(req,res){
             }
         });
     })
+
+app.post("/imageUpload",upload.single('memberImage'),function(req,res){
+  const file = req.file;
+  console.log(file.filename);
+
+  res.send(file);
+
+})
 
 
 app.get("/getTeam",function(req,res){
@@ -96,11 +143,12 @@ app.get("/getTeam",function(req,res){
             });
     })
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/yearbook'));
+// app.use(express.static(__dirname + '/dist/yearbook'));
+app.use(express.static(__dirname + '/'));
 
 app.get('/*', function(req,res) {
 
-res.sendFile(path.join(__dirname+'/dist/yearbook/index.html'));
+res.sendFile(path.join(__dirname+'/'));
 });
 
 

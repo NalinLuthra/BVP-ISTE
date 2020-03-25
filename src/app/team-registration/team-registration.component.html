@@ -1,5 +1,5 @@
 <mat-grid-list cols="2" rowHeight="1:1">
-  <mat-grid-tile><mat-card class="example-card" style="max-width: 450px; top:30px">
+  <mat-grid-tile><mat-card class="example-card" style="max-width: 450px;">
       <mat-card-header>
         <mat-card-title><b>Registration</b></mat-card-title>
       </mat-card-header>
@@ -11,9 +11,12 @@
                 <ng-template matStepLabel>Enter Basic Details</ng-template>
                 <mat-form-field class="example-full-width">
                   <input matInput placeholder="Full Name" [(ngModel)]="username" name="username" required>
+
                 </mat-form-field>
                 <div class="example-full-width">
-                  <mat-label for="image" >Upload Image :</mat-label>
+                  <mat-label for="image" >Upload Image : </mat-label>
+                  <!-- <input type="file" name="image" (change)="fileProgress($event)" /> -->
+                  <!-- Upload progress: {{ fileUploadProgress }} -->
                   <input type="file" [(ngModel)]="path" name="image" (change)="onFileUpload($event)" required>
                 </div>
                 <mat-form-field class="example-full-width">
@@ -26,7 +29,8 @@
                     <input matInput placeholder="Quote" [(ngModel)]="quote" name="quote" required>
                 </mat-form-field>
                 <mat-form-field class="example-full-width">
-                  <input matInput [matDatepicker]="picker" placeholder="Date of Birth">
+                  <input matInput [matDatepicker]="picker" (dateInput)="addEvent('input',$event)"
+                  (dateChange)="addEvent('input',$event)" placeholder="Date of Birth">
                   <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                   <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
@@ -63,8 +67,8 @@
                   <button  style="width: 200px;" mat-raised-button (click)="login()" color="primary">Register</button>
                 </mat-card-actions> -->
                 <mat-card-actions>
-                  <button style="width: 200px;" mat-button mat-raised-button matStepperPrevious color="accent">Back</button>
-                  <button style="width: 200px;" mat-button mat-raised-button matStepperNext color="primary" (click)="register()">Register</button>
+                  <button style="width: 180px;" mat-button mat-raised-button matStepperPrevious color="accent">Back</button>
+                  <button style="width: 180px;" mat-button mat-raised-button matStepperNext color="primary" (click)="register()">Register</button>
                 </mat-card-actions>
               </form>
             </mat-step>
@@ -80,7 +84,7 @@
     <mat-card-content >
                 <div class="our-team">
                   <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                    <img class="img-fluid" style="overflow: auto; width:130px ; height:130px ; object-fit: cover ; " src={{imager}}>
                   </div>
                   <div class="team-content">
                     <h2 class="name">{{username}}</h2>

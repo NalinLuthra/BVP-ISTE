@@ -42,6 +42,10 @@ users: userProfile[];
   ngOnInit() {
     this.rs.getTeam().subscribe((data: userProfile[]) => {
       this.users = data;
+      data.forEach(element => {
+        console.log(element.image)
+        element.image = 'localhost:8080/' +  element.image;
+      });
       console.log(data)
     })
 
